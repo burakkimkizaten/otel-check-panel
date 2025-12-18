@@ -1,0 +1,43 @@
+export default function CheckPage() {
+  return (
+    <main className="min-h-screen bg-slate-950 text-slate-50 flex items-center justify-center">
+      <div className="max-w-xl w-full px-6 py-10 rounded-2xl bg-slate-900 border border-slate-800 shadow-xl space-y-6">
+        <h1 className="text-2xl font-semibold">
+          🕵️‍♂️ Blacklist Check Ekranı
+        </h1>
+
+        <p className="text-sm text-slate-300">
+          Bu sayfa resepsiyonun isim &amp; soyisim girip hızlıca kara liste
+          kontrolü yapacağı ekran olacak. Şimdilik sadece test için basit bir
+          tasarım koyduk; Supabase bağlantısını bir sonraki adımda ekleyeceğiz.
+        </p>
+
+        <form className="space-y-4">
+          <div>
+            <label className="block text-xs mb-1">İsim</label>
+            <input
+              type="text"
+              className="w-full rounded-lg bg-slate-800 border border-slate-700 px-3 py-2 text-sm outline-none focus:border-emerald-500"
+              placeholder="Örn: Ali"
+            />
+          </div>
+          <div>
+            <label className="block text-xs mb-1">Soyisim</label>
+            <input
+              type="text"
+              className="w-full rounded-lg bg-slate-800 border border-slate-700 px-3 py-2 text-sm outline-none focus:border-emerald-500"
+              placeholder="Örn: Yılmaz"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-medium py-2 text-sm transition"
+          >
+            Kara listeyi kontrol et (dummy)
+          </button>
+        </form>
+      </div>
+    </main>
+  );
+}
